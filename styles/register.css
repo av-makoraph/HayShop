@@ -99,6 +99,7 @@ button {
     background-color:#0c83b3;
     font-family:"Schibsted Grotesk";
     font-weight: bold;
+    margin-bottom:37px;
 }
 
 button:hover {
