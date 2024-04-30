@@ -1,0 +1,124 @@
+body {
+    font-family: "Schibsted Grotesk";
+    
+    
+    
+}
+
+#haymain {
+
+    position:fixed;
+    background-color: #0c83b3;
+    color:white;
+    top:0;
+    width:540px;
+    height:200%;
+    margin-left:-8px;
+    
+}
+
+
+.valkom {
+    font-size: 52px;
+    padding-left: 53px;
+    margin:auto;
+    padding-top:150px;
+
+}
+
+.def {
+
+    display:block;
+    font-size:73px;
+    padding-left:53px;
+    margin-top:auto;
+    padding-top:23px;
+}
+
+.header2 {
+
+    color:rgb(0, 0, 0);
+    font-size: 93px;
+    
+    margin-left:622px;
+}
+
+.loginelements {
+
+
+    margin-left:622px;
+    font-size:40px;
+}
+
+input {
+    
+    font-family: "Schibsted Grotesk";
+    width:auto;
+    max-width: 900px;
+    height:50px;
+    padding-left:22px;
+    border-radius:7px;
+    font-size:23px;
+    border:none;
+    margin-top:13px;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    opacity: 80%;
+    backdrop-filter: blur(233px);
+    
+}
+
+select {
+    
+    font-family: "Schibsted Grotesk";
+    width:auto;
+    max-width: 900px;
+    height:50px;
+    padding-left:22px;
+    border-radius:7px;
+    font-size:23px;
+    border:none;
+    margin-top:13px;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    opacity: 80%;
+    backdrop-filter: blur(233px);
+    
+}
+
+button {
+
+    margin-left:622px;
+    height:53px;
+    width:123px;
+    border-radius: 7px;
+    margin-top:30px;
+    font-size:23px;
+    border:none;
+    color:white;
+    background-color:#0c83b3;
+    font-family:"Schibsted Grotesk";
+    font-weight: bold;
+    margin-bottom:37px;
+}
+
+button:hover {
+
+    background-color: #0095a0;
+    cursor:pointer;
+}
+
+button:active {
+
+    background-color:rgb(0, 86, 92);
+}
+
+a {
+    text-decoration: underline;
+    color:#ffffff;
+    font-size: 23px;
+    padding-left:53px;
+    
+    
+    
+}
