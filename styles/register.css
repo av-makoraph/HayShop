@@ -68,6 +68,11 @@ input {
     
 }
 
+#email {
+
+    width:50%;
+    padding-right:20px;
+}
 select {
     
     font-family: "Schibsted Grotesk";
@@ -122,3 +127,4 @@ a {
     
     
 }
+
