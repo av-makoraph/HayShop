@@ -1,127 +1,59 @@
-.animate-in {
-  -webkit-animation: fadeIn .5s ease-in;
-  animation: fadeIn .5s ease-in;
-}
-.animate-out {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
-  opacity: 0;
-}
-@-webkit-keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 html, body {
 
-    margin:0;
-    padding:0;
-}
+  margin-left:23px;
+  margin-right:23px;
 
-
+  }
 
 a {
-    color:white;
-    
-}
-.menubar {
 
-    background-color:#008024;
-    padding-top:23px;
-    height:200px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    
+  text-decoration: none;
+  color:black;
 }
 
-#hayshop-big {
+a:visited {
 
-    position:sticky;
-    font-size: 10vh;
-    font-weight: bolder;
-    margin-left:7%;
-    margin-top:990px;
-    margin-right:auto;
-    text-decoration: none;
+  text-decoration:none;
+  color:black;
 }
 
-
-.innerbar {
-
-    padding-top:-23px;
-    text-align: center;
-    margin-left: -35%;
+a:hover {
+  color: grey;
 }
 
-#search {
+.mainbar {
 
-    position: absolute;
-    display:inline;
-    font-family: "Schibsted Grotesk";
-    border-radius:90px;
-    border:none; 
-    margin-top:-70px;
-    height:50px;
-    width:40%;  
-    max-width: 50%;
-    padding-left:22px;
-    padding-right:22px;
-    font-size:large;
+  background-color:black;
 }
 
-.dropbtn {
-    font-family: "Schibsted Grotesk";
-    background-color: #00ad31;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-  }
+.topbar {
   
-  .dropdown {
-
-    font-family: "Schibsted Grotesk";
-    position: relative;
-    margin-top:-83px;
-    display: inline-block;
-    float:right;
-    right:20%;
-
-
-  }
-  
-  .dropdown-content {
-    font-family: "Schibsted Grotesk";
-    text-align: left;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .dropdown-content a {
-    font-family: "Schibsted Grotesk";
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:active {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block; }
-
-.menubar .profile {
-
-  position:relative;
   margin-top:-23px;
+  padding-right:23px;
+  float:left;
 }
+
+.hayshop {
+  font-size: 50px;
+}
+
+.nibbles {
+  position: absolute;
+  padding-top:15px;
+  right:0;
+  padding-right:93px;
+}
+
+.logout {
+  position:absolute;
+  top:2.08em;
+  right:0;
+  padding-right:67px;
+}
+
+.home {
+  position:absolute;
+  font-size:20px;
+  margin-top:72px;
+}
+
