@@ -42,18 +42,122 @@ a:hover {
   padding-top:15px;
   right:0;
   padding-right:93px;
+  
 }
 
+.nibbles a {
+
+  transition: 500ms ease;
+}
 .logout {
   position:absolute;
   top:2.08em;
   right:0;
   padding-right:67px;
+  transition: 200ms ease;
 }
 
+.logout:hover {
+
+  filter: brightness(0) saturate(100%) invert(50%) sepia(5%) saturate(9%) hue-rotate(1deg) brightness(99%) contrast(87%);
+}
 .home {
   position:absolute;
   font-size:20px;
   margin-top:72px;
 }
 
+.delinfo, .cartglance {
+
+  position: absolute;
+  margin-top:157px;
+  background-color:#008024;
+  padding-left:15px;
+  padding-right:17px;
+  padding-bottom:9px;
+  color:white;
+  border-radius: 8px;
+  line-height:35px;
+  filter: drop-shadow(0px 0px 3px #03410b);
+  transition: 350ms ease;
+}
+
+.cartglance {
+
+  margin-top:365px; 
+  width: 305px;
+  padding-right:33px;
+}
+
+.cartglance p{
+
+  line-height:9px;
+  font-size:20px;
+}
+
+.cartglance #mer {
+
+  line-height: normal;
+}
+.delinfo p {
+
+  line-height:1px;
+
+}
+
+.delinfo #itemno {
+
+  
+  font-size:35px;
+  font-weight:450;
+}
+
+.delinfo:hover, .cartglance:hover {
+
+  filter: drop-shadow(0px 0px 10px #058516);
+  transform: scale(1.03);
+}
+
+
+
+.cartglance #mer {
+
+  color:white;
+  font-weight: bold;
+}
+
+.nyheter {
+
+  background-image: linear-gradient(
+    to top, rgba(0, 0, 0, 0.72), rgba(117, 19, 93, 0)), 
+  url(images/pexels-dodogr8-916406.jpg);
+  background-size: fit;
+  background-size: 2322px;
+  background-repeat: no-repeat;
+  position:relative;
+  color:rgb(255, 255, 255);
+  border-radius:13px;
+  padding-left:19px;
+  margin-left:393px;
+  top:159px;
+  height:423px;
+  filter: drop-shadow(0px 0px 3px #001f33);
+  transition: 350ms ease;
+}
+
+.nyheter:hover {
+
+  transform: scale(1.03);
+  filter: drop-shadow(0px 0px 5px #003d66);
+
+}
+.nyheter h1 {
+
+  font-size:40px;
+}
+
+.i-nyheter {
+
+  line-height:9px;
+  padding-top:320px;
+}
