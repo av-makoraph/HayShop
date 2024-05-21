@@ -1,14 +1,14 @@
 html, body {
 
-  margin-left:23px;
+  margin-left: 23px;
   margin-right:23px;
-
-  }
+}
 
 a {
 
   text-decoration: none;
   color:black;
+  transition: 150ms linear;
 }
 
 a:visited {
@@ -19,16 +19,31 @@ a:visited {
 
 a:hover {
   color: grey;
+  cursor: pointer;
 }
+
+
 
 .mainbar {
 
-  background-color:black;
+  top:0;
+  left:0;
+  right:0;
+  padding-left:23px;
+  padding-right:23px;
+  border:none;
+  display:inline;
+  position:fixed;
+  z-index: 1;
+  width:100%;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(255,255,255,1) 35%);
 }
 
 .topbar {
   
   margin-top:-23px;
+  
   padding-right:23px;
   float:left;
 }
@@ -161,3 +176,58 @@ a:hover {
   line-height:9px;
   padding-top:320px;
 }
+
+.search_container {
+  padding: 70px 0;
+  position: sticky;
+  top:0;
+  display:flex;
+  justify-content: center;
+  margin-top:109px;
+}
+
+input {
+  
+  
+  font-family: "Schibsted Grotesk";
+  width:100%;
+  max-width: 900px;
+  height:50px;
+  padding-left:22px;
+  padding-right:22px;
+  border-radius:29px;
+  font-size:23px;
+  border:none;
+  margin-top:13px;
+  color:rgb(0, 0, 0);
+  background-color:rgb(235, 235, 235);
+  transition: 350ms ease;
+
+}
+
+.sidebar {
+
+  position:sticky;
+  top:0;
+  margin-top:10px;
+  background-color:#ececec;
+  border-radius: 9px;
+  width:15%;
+  padding-left:20px;
+  padding-top: 0.1px;
+  padding-bottom:1px;
+
+  
+}
+
+.profil {
+
+  position:sticky;
+  top:0;
+  margin-left:15px;
+  margin-top:-80px;
+  font-size: 32px;
+  max-width: 70px;
+
+}
+
