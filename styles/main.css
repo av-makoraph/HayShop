@@ -163,7 +163,7 @@ a:hover {
 .nyheter:hover {
 
   transform: scale(1.03);
-  filter: drop-shadow(0px 0px 5px #003d66);
+  filter: drop-shadow(0px 0px 13px #003d66);
 
 }
 .nyheter h1 {
@@ -181,6 +181,7 @@ a:hover {
   padding: 70px 0;
   position: sticky;
   top:0;
+  z-index: 1;
   display:flex;
   justify-content: center;
   margin-top:109px;
@@ -205,10 +206,17 @@ input {
 
 }
 
-.sidebar {
+.sidebar_main {
 
+  padding-top:159px;
+  margin-top:-129px;
   position:sticky;
   top:0;
+  z-index: inherit;
+}
+
+.sidebar_inner {
+  overflow:auto;
   margin-top:10px;
   background-color:#ececec;
   border-radius: 9px;
@@ -222,8 +230,7 @@ input {
 
 .profil {
 
-  position:sticky;
-  top:0;
+ 
   margin-left:15px;
   margin-top:-80px;
   font-size: 32px;
@@ -231,3 +238,20 @@ input {
 
 }
 
+.itemfin {
+
+    position:static;
+    margin-top:-619px;
+    margin-left:20%;
+    height:auto;
+    line-height: 15px;
+}
+
+.col1 {
+
+  flex-basis: 25%;
+  padding:10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  display:inline-block;
+}
