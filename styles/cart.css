@@ -7,14 +7,55 @@ html, body {
 .header1 {
 
     margin-top:109px;
-    font-size: 30px;;
-    
+    font-size: 30px;
+}
+
+button {
+
+    border:none;
+    font-family: "Schibsted Grotesk";
+    color:white;
+    background-color:#008024;
+    border-radius: 3px;
+    font-size: 23px;
+    font-weight:bold;
 }
 
 #user {
 
     font-size: 30px;
     display:inline-block;
-    
+    position: absolute;
+    margin-top:-93px;
+    margin-left:170px;
     font-weight: normal;
+}
+
+.item {
+
+    background-color: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+
+.item img {
+
+    border-radius: 19px;
+    width:auto;
+    height:200px;
+    margin:19px;
+}
+
+.item h1 {
+
+    position:absolute;
+    margin-top:-199px;
+    margin-left:250px;
+    font-size:45px;
+}
+
+.item p {
+
+    position:absolute;
+    margin-top:-79px;
+    margin-left: 250px;
 }
