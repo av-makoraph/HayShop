@@ -1,0 +1,79 @@
+a {
+  text-decoration: none;
+  color: black;
+  transition: 150ms linear;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.mainbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 23px;
+  padding-right: 23px;
+  border: none;
+  display: inline;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 0) 0%, rgba(255, 255, 255, 1) 35%);
+}
+
+.hayshop {
+  font-size: 50px;
+}
+
+.topbar {
+  margin-top: -23px;  
+  padding-right: 23px;
+  float: left;
+}
+
+.nibbles {
+  position: absolute;
+  padding-top: 15px;
+  right: 0;
+  padding-right: 93px;
+}
+
+.logout {
+  position: absolute;
+  top: 2.08em;
+  right: 0;
+  padding-right: 67px;
+  transition: 200ms ease;
+}
+
+input {
+  font-family: "Schibsted Grotesk";
+  width: 100%;
+  max-width: 900px;
+  height: 50px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 29px;
+  font-size: 23px;
+  border: none;
+  margin-top: 13px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(235, 235, 235);
+  transition: 350ms ease;
+}
+
+.search_container {
+  width: 100%;
+  max-width: 903px;
+  position: fixed;
+  top: 7px; /* Adjust based on your layout */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+

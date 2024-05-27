@@ -24,7 +24,7 @@
     <h1 class="header2">Be a contributor to our catalog!</h1>
 
     <div class="loginelements">
-    <form>
+    <form action="process-form.php" methods="post">
         <label for="fname">First Name</label><br>
         <input type="text" id="fname"><br><br>
 
@@ -283,7 +283,7 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
         <br><br>
-        <label for="uname">Username (for login)</label><br>
+        <label for="uname">Brand:</label><br>
         <input type="text" id="uname"><br><br>
 
         <label for="pword">Password:</label><br>
@@ -291,7 +291,8 @@
     </form>
     </div>
 
-    <button type="button" onclick="alert('it fucking works!')">Register</button>
+    <button type="submit" onclick="location.href='hayshop-login.html'">Register</button>
+    
     
     
 

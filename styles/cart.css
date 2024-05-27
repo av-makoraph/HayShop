@@ -1,0 +1,20 @@
+html, body {
+
+    margin-left: 23px;
+    margin-right:23px;
+  }
+  
+.header1 {
+
+    margin-top:109px;
+    font-size: 30px;;
+    
+}
+
+#user {
+
+    font-size: 30px;
+    display:inline-block;
+    
+    font-weight: normal;
+}
