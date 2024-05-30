@@ -34,7 +34,7 @@ a:hover {
   border:none;
   display:inline;
   position:fixed;
-  z-index: 1;
+  z-index: 99;
   width:100%;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(255,255,255,1) 35%);
@@ -85,14 +85,16 @@ a:hover {
 .delinfo, .cartglance {
 
   position: absolute;
+  width:323px;
   margin-top:157px;
   background-color:#008024;
   padding-left:15px;
   padding-right:17px;
+  line-height: auto;
   padding-bottom:9px;
   color:white;
   border-radius: 8px;
-  line-height:35px;
+  
   filter: drop-shadow(0px 0px 3px #03410b);
   transition: 350ms ease;
 }
@@ -131,6 +133,11 @@ a:hover {
 
   filter: drop-shadow(0px 0px 10px #058516);
   transform: scale(1.03);
+}
+
+.delinfo:active, .cartglance:active {
+
+  transform: scale(0.92);
 }
 
 
@@ -181,7 +188,7 @@ a:hover {
   padding: 70px 0;
   position: sticky;
   top:0;
-  z-index: 1;
+  z-index: 999;
   display:flex;
   justify-content: center;
   margin-top:109px;

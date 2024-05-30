@@ -12,6 +12,7 @@ html, body {
     
 }
 
+
 #payment {
 
     font-family: "Schibsted Grotesk";
@@ -25,8 +26,41 @@ html, body {
     border:none;
     margin-top:13px;
     color:white;
-    background-color:rgb(0, 0, 0);
+    background-color:#008024;
     opacity: 80%;
     backdrop-filter: blur(233px);
 
+}
+
+#submit {
+
+    position:sticky;
+    top:1;
+    border:none;
+    font-family: "Schibsted Grotesk";
+    color:white;
+    background-color:#008024;
+    border-radius: 3px;
+    font-size: 33px;
+    font-weight:bold;
+    margin-bottom:232px;
+    float:right;
+    transition: 155ms ease;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color:#00942a;
+
+}
+
+#submit:active {
+
+    background-color:green;
+
+}
+
+#gcnm {
+
+    width:290px;
 }

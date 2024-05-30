@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="hayfunction.js"></script>
+    <script src="paymentoptions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Cart | Hayshop </title>
 </head>
 <body>
@@ -47,15 +49,21 @@
             <h1>Payment</h1>
         </div>
 
-
-        <select id="payment" name="payment_list" class="form-control">
-
+        <h1>Select payment method</h1>
+        <select id="payment">
+            <option value="bruh">Select...</option>
             <option value="gcash">GCash</option>
             <option value="cc">Credit Card</option>
             <option value="paypal">PayPal</option>
             <option value="cod">Cash on Delivery</option>
         </select>
 
-        
+        <h1 id="valedit">You haven't selected a payment method yet!</h1>
+
+        <h1 id="dyna1"></h1>
+        <h1 id="dyna2"></h1>
+        <h1 id="dyna3"></h1>
+
+        <button onclick="" id="submit">Buy!</button>
 </body>
 </html>
