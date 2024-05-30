@@ -10,15 +10,42 @@ html, body {
     font-size: 30px;
 }
 
+.addmoreitems {
+
+    position:sticky;
+    font-size: 23px;
+    padding:10px;
+    border-radius: 10px;
+    margin-top:-92px;
+    
+}
+
 button {
 
+    position:sticky;
+    top:1;
     border:none;
     font-family: "Schibsted Grotesk";
     color:white;
     background-color:#008024;
     border-radius: 3px;
-    font-size: 23px;
+    font-size: 33px;
     font-weight:bold;
+    margin-bottom:232px;
+    float:right;
+    transition: 155ms ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:#00942a;
+
+}
+
+.item {
+
+    margin-top:23px;
+    
 }
 
 #user {
@@ -31,12 +58,7 @@ button {
     font-weight: normal;
 }
 
-.item {
-
-    border-radius: 30px;
-}
-
-.item img {
+.itemimg {
 
     border-radius: 19px;
     width:auto;
@@ -50,6 +72,7 @@ button {
     margin-top:-199px;
     margin-left:250px;
     font-size:45px;
+    padding-right: 200px;
 }
 
 .item p {
@@ -58,3 +81,46 @@ button {
     margin-top:-79px;
     margin-left: 250px;
 }
+
+.itemqty {
+
+    position:relative;   
+    margin-left: 243px;
+    margin-top:-192px;
+
+}
+
+#qty {
+
+    border-radius: 10px;
+    width:50px;
+    margin-top:150px;
+    
+}
+
+.radera {
+    background-color: #800000;
+    font-size: 30px;
+    border-radius: 10px;
+    float:left;
+    margin-top:-52px;
+    margin-left:350px;
+    width:50px;
+    height:50px;
+}
+
+.radera:hover {
+
+    background-color: #990000;
+}
+
+.checkout {
+
+    font-size:30px;
+    border-radius: 10px;
+    padding:6px;
+    margin-left:20px;
+    margin-top:-52px;
+    float:left;
+}
+

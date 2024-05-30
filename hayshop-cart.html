@@ -44,16 +44,41 @@
 
         <div class="header1">
         <h1> Cart |  </h1> <div id="user">anitamax</div>
-        <button onclick="location.href='hayshop-mainstore.html'">Add more items!</button>
+        <button onclick="location.href='hayshop-mainstore.html'" class="addmoreitems">Add more items!</button>
     </div>
 
+    
+    
     <div class="item">
 
-        <img src="images/rake.png">
+        <img src="images/rake.png" class="itemimg">
         <h1>Garden Rake 16 Tines for Gardening ALL METAL 50-Inch Heavy Duty</h1>
         <p>PHP 329</p>
 
+        <div class="itemqty">
+            
+            <input type="number" id="qty" 
+            oninput="javascript: 
+            if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength="2" 
+            value="1"
+            min="1"
+            
+            />
+           
+        </div>
+        
+        <button onclick="" class="radera">
+        X
+        </button>
+
+        <button onclick="" class="checkout">
+        Proceed to checkout
+        </button>
     </div>
+    
+    
 
 </body>
 </html>
