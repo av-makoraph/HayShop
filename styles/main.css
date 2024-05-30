@@ -238,10 +238,18 @@ input {
 
 }
 
+.row {
+
+  
+}
+
 .itemfin {
 
-    position:static;
+    
+    z-index: 1;
+    position:relative;
     margin-top:-619px;
+    /* padding-top:131239px; */
     margin-left:20%;
     height:auto;
     line-height: 15px;
@@ -249,6 +257,7 @@ input {
 
 .col1 {
 
+  
   flex-basis: 25%;
   padding:10px;
   min-width: 200px;
@@ -256,3 +265,4 @@ input {
   display:inline-block;
   
 }
+
