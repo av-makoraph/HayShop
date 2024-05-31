@@ -2,7 +2,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'inventorydb';
+$database = 'db_hayshop';
 
 $connection = mysqli_connect($server, $username, $password, $database);
 

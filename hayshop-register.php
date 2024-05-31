@@ -1,7 +1,5 @@
 <?php 
 
-require_once ('connect.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +13,7 @@ require_once ('connect.php');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="hayfunction.js"></script>
+    <script src="javascript/regfunction.js"></script>
     <script src="reg-ddop.js"></script>
     <title>Hayshop</title>
 </head>
@@ -31,30 +30,32 @@ require_once ('connect.php');
      
     <h1 class="header2">Register your account</h1>
 
+
     <div class="loginelements">
-    <form>
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname"><br><br>
+        <section class="form signup">
+    <form method=POST>
+        <label for="customer_fname">First Name</label><br>
+        <input type="text" id="customer_fname"><br><br>
 
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname"><br><br>
+        <label for="customer_lname">Last Name</label><br>
+        <input type="text" id="customer_lname"><br><br>
 
-        <label for="age">Birthdate</label><br>
-        <input type="date" max="2036-12-31" id="age"><br><br>
+        <label for="customer_DOB">Birthdate</label><br>
+        <input type="date" max="2036-12-31" id="customer_DOB"><br><br>
         
-        <label for="email">Email Address:</label><br>
-        <input type="text" max="2036-12-31" id="email"><br><br>
+        <label for="customer_email">Email Address:</label><br>
+        <input type="text" max="2036-12-31" id="customer_email"><br><br>
         
-        <label for="uname">Username (for login)</label><br>
-        <input type="text" id="uname"><br><br>
+        <label for="customer_username">Username (for login)</label><br>
+        <input type="text" id="customer_username"><br><br>
 
-        <label for="pword">Password:</label><br>
-        <input type="password" id="pword"><br>
+        <label for="customer_password">Password:</label><br>
+        <input type="password" id="customer_password"><br>
         <br>
 
-        <label for="country">Country</label>   
+        <label for="customer_country">Country</label>   
         <br>
-            <select id="country" name="country" class="form-control">
+            <select id="customer_country" name="customer_country" class="form-control">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>

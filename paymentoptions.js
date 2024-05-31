@@ -1,45 +1,56 @@
 window.onload = function() {
-    let
-      DescChange = document.getElementById("valedit"),
-      mySelect   = document.getElementById("payment"),
-      dyna1 = document.getElementById("dyna1"),
-      dyna2 = document.getElementById("dyna2"),
-      dyna3 = document.getElementById("dyna3")
-    ;
-  
-  
-    mySelect.onchange = function(){
-  
-      switch (mySelect.value)  {
-        case 'gcash':
-          DescChange.textContent = "Insert your GCash Number: ";
-          
-          var x = document.createElement("INPUT");
-          x.setAttribute("type", "number", "max", 10);
-          x.setAttribute("id", "gcnm")
-          document.body.appendChild(x);
+  let DescChange = document.getElementById("valedit");
+  let mySelect = document.getElementById("payment");
 
-        break;
-        case 'cc':
-          
-          DescChange.textContent = "Enter your name on the credit card:";
-          var x = document.createElement("INPUT");
-          x.setAttribute("type", "text");
-          x.setAttribute("id", "ccn")
-          document.body.appendChild(x);
+  mySelect.onchange = function() {
+      clearInputs(); // Clear existing input fields
 
-
-          dyna1.textContent = "Enter";
-        break;
-        case 'paypal':
-          DescChange.textContent = "For security reasons, PayPal isn''t supported.";
-        break;
-        case 'cod':
-            DescChange.textContent = "Enter your address:";
-            break;
-        default:
-            DescChange.textContent = "Seriously?";
-
-        }
-    }
+      switch (mySelect.value) {
+          case 'gcash':
+              DescChange.textContent = "Enter GCash Details:";
+              createInput("number", "gcnm", "Enter GCash Number:");
+              break;
+          case 'cc':
+              DescChange.textContent = "Enter Credit Card Details:";
+              createInput("text", "ccn", "Enter name on Card:");
+              createInput("number", "cvs", "Enter CVS:");
+              createInput("text", "cnum", "Enter Credit Card number:");
+              break;
+          case 'paypal':
+              DescChange.textContent = "For security reasons, PayPal isn't supported.";
+              break;
+          case 'cod':
+              DescChange.textContent = "Enter Home Address:";
+              createInput("text", "home_addr", "Enter home address:");
+              break;
+          default:
+              DescChange.textContent = "Seriously?";
+      }
   }
+
+  // Function to clear input fields
+  function clearInputs() {
+      clearcontent("gcnm");
+      clearcontent("ccn");
+      clearcontent("cvs");
+      clearcontent("cnum");
+      clearcontent("home_addr");
+  }
+
+  // Function to create input fields
+  function createInput(type, id, placeholderText) {
+      let input = document.createElement("input");
+      input.setAttribute("type", type);
+      input.setAttribute("id", id);
+      input.setAttribute("placeholder", placeholderText);
+      document.body.appendChild(input);
+  }
+
+  // Function to clear input fields
+  function clearcontent(elementID) {
+      let element = document.getElementById(elementID);
+      if (element) {
+          element.parentNode.removeChild(element);
+      }
+  }
+}
